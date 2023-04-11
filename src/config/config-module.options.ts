@@ -16,9 +16,6 @@ import jwtConfig from './jwt.config';
  */
 const getEnvFilePath = () => {
   const nodeEnv = process.env.NODE_ENV;
-  console.log({
-    nodeEnv,
-  });
   if (!nodeEnv) {
     throw new Error(
       `NODE_ENV must be provided in the .env file for the current running environment.`,
